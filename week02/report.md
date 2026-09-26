@@ -10,7 +10,7 @@ First write the selected public report title, URL, publication date and why it f
 
 | Selected report | URL | Date | Sample or campaign scope |
 |---|---|---|---|
-| Pending | Pending | Pending | Pending |
+| Threat Actors Deploy LummaC2 Malware to Exfiltrate Sensitive Data from Organizations (AA25-141B) | https://www.cisa.gov/news-events/cybersecurity-advisories/aa25-141b | May 21, 2025 | LummaC2 infostealer campaign; IOCs from Nov 2023–May 2025 |
 
 ## Data source mapping
 
