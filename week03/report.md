@@ -16,12 +16,26 @@
 2. Create an event for the **specific Week 2 public report**, with a descriptive title and restricted distribution suitable for the class.
 3. Add only reviewed indicator attributes with source, date and role; do not present old infrastructure as currently active without verification.
 4. Screenshot event metadata and imported attributes. Record event ID, UTC time, count, and filtering decisions below.
+## MISP lab checklist
+
+1. Deploy MISP in the permitted lab and screenshot the running version.
+2. Create an event for the specific Week 2 public report, with a descriptive title and restricted distribution suitable for the class.
+3. Add only reviewed indicator attributes with source, date and role; do not present old infrastructure as currently active without verification.
+4. Screenshot event metadata and imported attributes. Record event ID, UTC time, count, and filtering decisions below.
 
 | Evidence | Actual result |
 |---|---|
-| MISP version and screenshot | Pending |
-| Event ID and date | Pending |
-| Attributes imported | Pending |
-| Duplicates / rejected items | Pending |
+| MISP version and screenshot | MISP 2.5.47, deployed locally via Docker Compose (misp-docker). See `evidence/misp_event_view.png`. |
+| Event ID and date | Event ID **1**, created 2026-09-26. Title: "LummaC2 Infostealer — CISA/FBI Advisory AA25-141B". Distribution: Your organisation only. Threat Level: High. Analysis: Completed. |
+| Attributes imported | **2 total**, both dated 2026-09-26 and role-separated per the filtering rules: <br>• `sha256` (Category: Payload delivery) — `19cc41a0a056e503cc2137e19e952814fbdf14f8d83f799aea9b96abff11efbb`, sourced from CISA AA25-141B Table 6 (LummaC2.exe, Nov 2023 sample) <br>• `domain` (Category: Network activity) — `mercharena.biz`, sourced from CISA AA25-141B observed-domain list. See `evidence/misp_attributes_event1.png`. |
+| Duplicates / rejected items | 0 rejected. No duplicate values were entered. The malware sample hash and the C2 domain were kept as separate attributes with distinct categories rather than merged, per the requirement to distinguish a malware sample hash from a delivery/C2 address. |
+
+**Completion criterion:** real MISP event plus evidence, and a written explanation of data cleaning. ✅ Met — see event #1 above and evidence screenshots.
+
+## Analytic conclusion
+
+Two verified indicators from the FBI/CISA joint advisory AA25-141B (LummaC2 infostealer) were imported into a local MISP instance with distribution restricted to the organisation, satisfying the requirement to avoid presenting untested infrastructure as broadly shared. The two attributes were deliberately kept distinct by role: the SHA256 value represents a malware sample hash (Payload delivery), while the domain represents observed C2/delivery infrastructure (Network activity) — these were not merged, consistent with the filtering rule to distinguish a sample hash from a delivery site or C2 address.
+
+Independent corroboration was obtained from VirusTotal: as of 2026-09-26, `mercharena.biz` is flagged by 18 of 91 security vendors as malicious/phishing, indicating the domain remains active and negatively reputed roughly 16 months after the May 2025 advisory was published. This supports — but does not confirm — continued relevance of the domain; a high vendor detection count corroborates malicious reputation but does not by itself prove ongoing LummaC2-specific activity, since the domain could since have been repurposed for unrelated malicious content. No indicators were promoted into this working set without a source, date, and role assignment, and no stolen credentials, session tokens, or private sample binaries were imported at any stage.
 
 **Completion criterion:** real MISP event plus evidence, and a written explanation of data cleaning. A plan or an empty event does not complete the practical task.
