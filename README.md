@@ -9,7 +9,7 @@ How do infostealers obtain and transfer sensitive data, which public evidence is
 | Week | Deliverable | State |
 |---|---|---|
 | 1 | [Glossary and threat/source classification](week01/report.md) | Desk research completed; group review required |
-| 2 | [Purpose-driven OSINT collection plan](week02/report.md) | Tool searches and screenshots pending |
+| 2 | [Purpose-driven OSINT collection plan](week02/report.md) | Public-source research and VT/Shodan lookups completed; Maltego graph pending |
 | 3 | [Filtering, normalization and MISP plan](week03/report.md) | MISP deployment/import pending |
 
 Week 1 [defense outline](week01/defense.md) is for a 7–8 minute group presentation. Public references are evidence of general behaviors; they are not observations on our university network. The group will choose one or more **documented public examples for individual evidence records in Week 2** without renaming the overarching topic.
