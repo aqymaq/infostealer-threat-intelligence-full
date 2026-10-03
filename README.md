@@ -20,3 +20,15 @@ Week 1 [defense outline](week01/defense.md) is for a 7–8 minute group presenta
 ## Publish on GitHub
 
 This folder already has an initial local commit. Unzip it, add the folder as a local repository in GitHub Desktop, and use **Publish repository**. Make separate commits when your group collects Week 2 evidence and completes Week 3 MISP work. Do not upload malware binaries, credentials, private browser data or API keys.
+
+## Use of AI
+
+AI tools were used as supporting tools during this project. They assisted with:
+
+- organizing and structuring the report;
+- improving clarity and wording of the documentation;
+- explaining Cyber Kill Chain and MITRE ATT&CK concepts;
+- assisting with the mapping of observed attack behavior to MITRE ATT&CK techniques;
+- reviewing the final documentation for consistency.
+
+The case study, sources, attack analysis, and final content were reviewed by the team. AI was used to support the research and documentation process rather than as a primary source of threat intelligence.
