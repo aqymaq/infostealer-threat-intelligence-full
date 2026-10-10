@@ -162,21 +162,4 @@ Screenshots:
 - MITRE ATT&CK: attack.mitre.org (T1059.001, T1555.003, T1204, T1041)
 - Course AI-use statement: see main README
 
-## 10. Defense outline (7–8 min)
 
-| Time | Content |
-|---|---|
-| 0:00–1:00 | Project recap (Weeks 1–3, LummaC2/MISP) and hunting models |
-| 1:00–2:00 | Hypotheses H1–H3 and data sources |
-| 2:00–5:00 | Live demo or screenshots: queries, simulated activity, results |
-| 5:00–6:30 | Findings, false positives, tuning |
-| 6:30–7:30 | Conclusion, GitHub commit history, Week 6 plan |
-
-## Suggested commits
-
-```
-week5: add hypotheses and data sources
-week5: add Splunk/ELK queries
-week5: lab setup + simulation evidence
-week5: findings, tuning, conclusion
-```
