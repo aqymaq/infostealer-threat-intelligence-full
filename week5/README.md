@@ -1,34 +1,30 @@
-# Infostealer Threat Intelligence
+# Infostealer Threat Hunting Project
 
-Group project for the 2026–2027 CTI practice. Scope: information-stealing malware as a **class of threats**; no specific family is the project title or assumed source of all evidence.
+Course project on information-stealing malware (LummaC2 as a documented example): threat intel (MISP), detection (Sigma) and threat hunting (Splunk/Sysmon).
 
-## Research question
+Authors: Asilbek Turgunov (group CS-2426) and team, Astana IT University.
 
-How do infostealers obtain and transfer sensitive data, which public evidence is reliable, and how can defenders detect the relevant behaviors?
+## Repository structure
 
-| Week | Deliverable | State |
-|---|---|---|
-| 1 | [Glossary and threat/source classification](week01/report.md) | Desk research completed; group review required |
-| 2 | [Purpose-driven OSINT collection plan](week02/report.md) | Public-source research and VT/Shodan lookups completed; Maltego graph pending |
-| 3 | [Filtering, normalization and MISP plan](week03/report.md) | MISP deployment/import pending |
+- `report.md` — Week 5 report: threat hunting concept, hypotheses, queries, lab results
+- `img/` — screenshots of the lab and query results
 
-Week 1 [defense outline](week01/defense.md) is for a 7–8 minute group presentation. Public references are evidence of general behaviors; they are not observations on our university network. The group will choose one or more **documented public examples for individual evidence records in Week 2** without renaming the overarching topic.
+## AI-use statement
 
-**Group members:** fill in  
-**Teacher / section:** fill in
+| Item | Value |
+|---|---|
+| AI tool | Claude (Anthropic) |
+| Share of AI use | ~30% |
 
-## Publish on GitHub
+**What AI was used for:**
+- Step-by-step guidance for the lab setup (Sysmon, audit policy, Splunk) and help with troubleshooting errors
+- Drafting and editing the text of `report.md` and the defense speech
+- Suggesting query fixes (for example, `rex` parsing on a Russian-locale Windows)
 
-This folder already has an initial local commit. Unzip it, add the folder as a local repository in GitHub Desktop, and use **Publish repository**. Make separate commits when your group collects Week 2 evidence and completes Week 3 MISP work. Do not upload malware binaries, credentials, private browser data or API keys.
+**What was done by the team:**
+- Choosing the topic, hypotheses and the overall approach
+- Setting up the lab, running all simulations and queries on our own host
+- Taking the screenshots and checking that the results in the report match what we actually observed
+- Verifying ATT&CK technique IDs and sources
 
-## Use of AI
-
-AI tools were used as supporting tools during this project. They assisted with:
-
-- organizing and structuring the report;
-- improving clarity and wording of the documentation;
-- explaining Cyber Kill Chain and MITRE ATT&CK concepts;
-- assisting with the mapping of observed attack behavior to MITRE ATT&CK techniques;
-- reviewing the final documentation for consistency.
-
-The case study, sources, attack analysis, and final content were reviewed by the team. AI was used to support the research and documentation process rather than as a primary source of threat intelligence.
+All results and screenshots in the report come from our own lab runs. AI-generated text was reviewed and edited by the team before submission.
