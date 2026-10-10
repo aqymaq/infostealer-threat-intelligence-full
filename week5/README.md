@@ -2,7 +2,7 @@
 
 Course project on information-stealing malware (LummaC2 as a documented example): threat intel (MISP), detection (Sigma) and threat hunting (Splunk/Sysmon).
 
-Authors: Asilbek Turgunov (group CS-2426) and team, Astana IT University.
+Authors: Asilbek Turgunov, Miras Sailauuly, Zhanibek Zhurgen 
 
 ## Repository structure
 
