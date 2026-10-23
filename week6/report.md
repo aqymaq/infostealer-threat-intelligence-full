@@ -18,7 +18,7 @@ PowerShell can be used legitimately for system administration, but adversaries c
 
 ### 3. Lab Environment
 
-- **Operating system:** Windows 10 Home (as reported by `Get-ComputerInfo`)
+- **Operating system:** Windows 11
 - **Shell:** Windows PowerShell
 - **Monitoring tool:** Microsoft Sysinternals Sysmon v15.22
 - **Log source:** `Microsoft-Windows-Sysmon/Operational`
