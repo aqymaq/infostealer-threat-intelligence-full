@@ -281,14 +281,3 @@ most useful output of writing this plan.
 - Internal: Week 4 (Cyber Kill Chain), Week 5 (threat-hunting H1–H3), Week 6
   (T1059.001 simulation), Week 7 (CAR analytic CAR-2014-04-003).
 - Course AI-use statement: see main [README](../README.md).
-
-## 10. Defense outline (7–8 minutes)
-
-| Time | Focus |
-|---|---|
-| 0:00–0:50 | Recap: we move from detection (W5–7) to the attacker's plan (W8). |
-| 0:50–2:00 | Emulation vs. pen test vs. red team; why *emulation* fits our documented case. |
-| 2:00–3:40 | Walk the three-stage plan (initial access → persistence → exfil) on the diagram, with ATT&CK IDs. |
-| 3:40–5:10 | Scope/safety: isolated lab, benign proxies, no live malware, manual approval. |
-| 5:10–6:30 | CALDERA model: our plan as an adversary profile (atomic planner, plain obfuscator, cleanup); CVE-2025-27364 caution. |
-| 6:30–7:30 | Defensive result: which stages we already detect, the persistence gap, and the Week 9 plan. One question. |
