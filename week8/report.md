@@ -1,4 +1,4 @@
-# Week 8 — Creating a Plan to Emulate an Attacker's Action
+# Week 8 - Creating a Plan to Emulate an Attacker's Action
 
 ## Project: Infostealer Threat Intelligence
 
